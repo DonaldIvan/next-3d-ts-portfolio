@@ -5,6 +5,8 @@ import Experience from '@/components/Experience';
 import Tech from '@/components/Tech';
 import Works from '@/components/Works';
 import Contact from '@/components/Contact';
+import OtherContact from '@/components/OtherContact';
+import Feedbacks from '@/components/Feedbacks';
 import StarsCanvas from '@/components/canvas/Stars';
 
 const Home = ({}) => {
@@ -19,11 +21,12 @@ const Home = ({}) => {
         <Experience />
         <Tech />
         <Works />
+        <Feedbacks />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
-        {/* <Feedbacks /> */}
+        <OtherContact />
       </div>
     </main>
   );
