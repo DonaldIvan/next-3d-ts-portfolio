@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import Experience from '@/components/Experience';
 
 const Home = ({}) => {
   return (
@@ -11,14 +12,14 @@ const Home = ({}) => {
           <Hero />
         </div>
         <About />
-        {/* <Experience /> */}
+        <Experience />
         {/* <Tech /> */}
         {/* <Works /> */}
-        {/* <Feedbacks /> */}
         <div className="relative z-0">
           {/* <Contact /> */}
           {/* <StarsCanvas /> */}
         </div>
+        {/* <Feedbacks /> */}
       </div>
     </main>
   );
