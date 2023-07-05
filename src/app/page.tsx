@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
+import Tech from '@/components/Tech';
 
 const Home = ({}) => {
   return (
@@ -13,7 +14,7 @@ const Home = ({}) => {
         </div>
         <About />
         <Experience />
-        {/* <Tech /> */}
+        <Tech />
         {/* <Works /> */}
         <div className="relative z-0">
           {/* <Contact /> */}
