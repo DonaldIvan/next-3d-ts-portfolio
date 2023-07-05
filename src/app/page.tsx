@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import About from '@/components/About';
 
 const Home = ({}) => {
   return (
@@ -9,7 +10,7 @@ const Home = ({}) => {
           <Navbar />
           <Hero />
         </div>
-        {/* <About /> */}
+        <About />
         {/* <Experience /> */}
         {/* <Tech /> */}
         {/* <Works /> */}
