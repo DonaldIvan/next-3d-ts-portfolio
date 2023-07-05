@@ -3,14 +3,12 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import { motion } from 'framer-motion';
-
-import 'react-vertical-timeline-component/style.min.css';
+import Image, { StaticImageData } from 'next/image';
 
 import { styles } from '@/lib/styles';
 import { experiences } from '@/constants';
 import SectionWrapper from '@/components/SectionWrapper';
 import { textVariant } from '@/lib/motion';
-import Image, { StaticImageData } from 'next/image';
 
 interface Props {
   title: string;

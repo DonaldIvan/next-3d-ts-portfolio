@@ -1,4 +1,5 @@
 import './globals.css';
+import 'react-vertical-timeline-component/style.min.css';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
