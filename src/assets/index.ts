@@ -4,6 +4,7 @@ import creator from './services/creator.png';
 import mobile from './services/mobile.png';
 import web from './services/web.png';
 import github from './github.png';
+import website from './website.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
@@ -29,17 +30,27 @@ import limecodes from './company/limecodes.png';
 import rightcrowd from './company/rightcrowd.jpg';
 import classicphotographer from './company/classic-photographer.png';
 
-import carrent from './projects/carrent.png';
+import tello from './projects/tello.png';
 import jobit from './projects/jobit.png';
 import tripguide from './projects/tripguide.png';
 
+import githubViolet from './contacts/github.png';
+import linkedin from './contacts/linkedin.png';
+import message from './contacts/message.png';
+import phone from './contacts/phone.png';
+
 export {
+  githubViolet,
+  linkedin,
+  message,
+  phone,
   logo,
   backend,
   creator,
   mobile,
   web,
   github,
+  website,
   menu,
   close,
   css,
@@ -62,7 +73,7 @@ export {
   limecodes,
   rightcrowd,
   classicphotographer,
-  carrent,
+  tello,
   jobit,
   tripguide,
 };

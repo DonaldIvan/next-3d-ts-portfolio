@@ -1,5 +1,9 @@
 'use client';
+import { toast } from 'react-toastify';
 import { useState, useRef, ChangeEvent, FormEvent } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Tooltip } from 'react-tooltip';
 import { motion } from 'framer-motion';
 import { send } from '@emailjs/browser';
 
@@ -8,6 +12,7 @@ import EarthCanvas from '@/components/canvas/Earth';
 import SectionWrapper from '@/components/SectionWrapper';
 import { slideIn } from '@/lib/motion';
 import config from '@/config';
+import { contacts } from '@/constants';
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -42,7 +47,7 @@ const Contact = () => {
       config.emailjsPublicKey,
     )
       .then(() => {
-        alert('Thank you. I will get back to you as soon as possible');
+        toast.success('Thank you. I will get back to you as soon as possible');
         setForm({
           name: '',
           email: '',
@@ -52,10 +57,8 @@ const Contact = () => {
       .finally(() => {
         setLoading(false);
       })
-      .catch((error) => {
-        // eslint-disable-next-line no-console
-        console.error(error);
-        alert('Something went wrong.');
+      .catch(() => {
+        toast.error('Something went wrong. Please try again later.');
       });
   };
   return (
@@ -117,7 +120,20 @@ const Contact = () => {
           <span className="mx-4 flex-shrink">Or reach me through</span>
           <div className="flex-grow border-t border-white"></div>
         </div>
-        <div className="flex justify-center"></div>
+        <div className="flex justify-center gap-5">
+          {contacts.map(({ icon, url, message }, index) => (
+            <div key={url}>
+              <Link href={url} target="_blank" id={`contact-${index}`}>
+                <Image src={icon} alt="url" height={40} width={40} />
+              </Link>
+              <Tooltip
+                content={message}
+                anchorSelect={`#contact-${index}`}
+                place="bottom"
+              />
+            </div>
+          ))}
+        </div>
       </motion.div>
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
