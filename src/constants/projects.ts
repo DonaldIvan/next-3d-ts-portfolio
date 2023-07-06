@@ -27,12 +27,25 @@ const CHAT_GPT = {
   name: 'chatgpt',
   color: 'text-[#009A74]',
 };
+
+const APPWRITE_CLOUD = {
+  name: 'appwrite',
+  color: 'text-[#E82D62]',
+};
 const projects = [
   {
     name: 'Tello',
     description:
       'Web-based project management and collaboration tool for streamlined task organization and tracking.',
-    tags: [REACT, NEXTJS, TPYESCRIPT, ZUSTAND, CHAT_GPT, TAILWIND],
+    tags: [
+      REACT,
+      NEXTJS,
+      TPYESCRIPT,
+      ZUSTAND,
+      CHAT_GPT,
+      TAILWIND,
+      APPWRITE_CLOUD,
+    ],
     image: tello,
     sourceCodeLink: 'https://github.com/DonaldIvan/trello-clone',
     liveDemoLink: 'https://tello.donaldivan.dev/',
