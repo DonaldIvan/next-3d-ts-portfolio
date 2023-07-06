@@ -12,6 +12,7 @@ import CanvasLoader from '../Loader';
 import { StaticImageData } from 'next/image';
 interface BallCanvasProps {
   icon: StaticImageData;
+  id?: string;
 }
 
 const Ball = ({ icon }: BallCanvasProps) => {
@@ -38,9 +39,9 @@ const Ball = ({ icon }: BallCanvasProps) => {
   );
 };
 
-const BallCanvas = ({ icon }: BallCanvasProps) => {
+const BallCanvas = ({ icon, id }: BallCanvasProps) => {
   return (
-    <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
+    <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }} id={id}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball icon={icon} />

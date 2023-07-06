@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { styles } from '@/lib/styles';
 import { navLinks } from '@/constants';
@@ -14,19 +13,18 @@ const Navbar = () => {
       className={`${styles.paddingX} fixed top-0 z-20 flex w-full items-center bg-primary py-5`}
     >
       <div className="item-center mx-auto flex w-full max-w-7xl justify-between">
-        <Link
-          href="/"
+        <div
           className="flex items-center gap-2"
           onClick={() => {
             setActive('');
-            window.scrollTo(0, 0);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         >
           <Image src={logo} alt="logo" className="h-9 w-9 object-contain" />
           <p className="cursor-pointer text-[18px] font-bold text-white">
             Donald Ivan
           </p>
-        </Link>
+        </div>
         <ul className="hidden list-none flex-row gap-10 sm:flex">
           {navLinks.map((link) => (
             <li

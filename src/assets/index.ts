@@ -1,8 +1,8 @@
 import logo from './logo.svg';
-import backend from './backend.png';
-import creator from './creator.png';
-import mobile from './mobile.png';
-import web from './web.png';
+import backend from './services/backend.png';
+import creator from './services/creator.png';
+import mobile from './services/mobile.png';
+import web from './services/web.png';
 import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
@@ -20,15 +20,18 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
+import nextjs from './tech/nextjs.svg';
+import reactquery from './tech/reactquery.svg';
 
-import meta from './company/meta.png';
-import shopify from './company/shopify.png';
-import starbucks from './company/starbucks.png';
-import tesla from './company/tesla.png';
+import adaca from './company/adaca.png';
+import devpartners from './company/devpartners.png';
+import limecodes from './company/limecodes.png';
+import rightcrowd from './company/rightcrowd.jpg';
+import classicphotographer from './company/classic-photographer.png';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
-import tripguide from './tripguide.png';
+import carrent from './projects/carrent.png';
+import jobit from './projects/jobit.png';
+import tripguide from './projects/tripguide.png';
 
 export {
   logo,
@@ -52,10 +55,13 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  nextjs,
+  reactquery,
+  adaca,
+  devpartners,
+  limecodes,
+  rightcrowd,
+  classicphotographer,
   carrent,
   jobit,
   tripguide,

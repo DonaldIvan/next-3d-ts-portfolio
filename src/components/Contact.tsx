@@ -65,7 +65,7 @@ const Contact = () => {
         className="flex-[0.75] rounded-2xl bg-black-100 p-8"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <h3 className={styles.sectionHeadText}>Send me a message!</h3>
 
         <form
           ref={formRef}
@@ -112,10 +112,16 @@ const Contact = () => {
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
+        <div className="relative flex items-center py-5">
+          <div className="flex-grow border-t border-white"></div>
+          <span className="mx-4 flex-shrink">Or reach me through</span>
+          <div className="flex-grow border-t border-white"></div>
+        </div>
+        <div className="flex justify-center"></div>
       </motion.div>
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className="h-[350px] md:h-[550px] xl:h-auto xl:flex-1"
+        className="h-[350px] md:h-[550px] xl:h-[700px] xl:flex-1"
       >
         <EarthCanvas />
       </motion.div>
