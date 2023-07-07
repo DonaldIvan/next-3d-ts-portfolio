@@ -26,16 +26,18 @@ const Navbar = () => {
           </p>
         </div>
         <ul className="hidden list-none flex-row gap-10 sm:flex">
-          {navLinks.map((link) => (
+          {navLinks.map(({ id, title }) => (
             <li
-              key={link.id}
+              key={id}
               className={`${
-                active === link.title ? 'text-white' : 'text-secondary'
+                active === title ? 'text-white' : 'text-secondary'
               } cursor-pointer text-[18px] font-medium hover:text-white`}
-              onClick={() => setActive(link.title)}
+              onClick={() => setActive(title)}
               aria-hidden="true"
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`${id}`} target={`${title === 'CV' ? '_blank' : null}`}>
+                {title}
+              </a>
             </li>
           ))}
         </ul>
@@ -53,19 +55,24 @@ const Navbar = () => {
             } black-gradient absolute right-0 top-20 z-10 mx-4 my-2 min-w-[140px] rounded-xl p-6`}
           >
             <ul className="flex list-none flex-col items-start justify-end gap-4">
-              {navLinks.map((link) => (
+              {navLinks.map(({ id, title }) => (
                 <li
-                  key={link.id}
+                  key={id}
                   className={`${
-                    active === link.title ? 'text-white' : 'text-secondary'
+                    active === title ? 'text-white' : 'text-secondary'
                   } font-poppins cursor-pointer text-[16px] font-medium`}
                   onClick={() => {
-                    setActive(link.title);
+                    setActive(title);
                     setToggle(false);
                   }}
                   aria-hidden="true"
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a
+                    href={`${id}`}
+                    target={`${title === 'CV' ? '_blank' : null}`}
+                  >
+                    {title}
+                  </a>
                 </li>
               ))}
             </ul>

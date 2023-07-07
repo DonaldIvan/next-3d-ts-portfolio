@@ -1,23 +1,27 @@
 const navLinks = [
   {
-    id: 'about',
+    id: '#about',
     title: 'About',
   },
   {
-    id: 'work',
+    id: '#work',
     title: 'Work',
   },
   {
-    id: 'tech',
+    id: '#tech',
     title: 'Tech Stacks',
   },
   {
-    id: 'projects',
+    id: '#projects',
     title: 'Projects',
   },
   {
-    id: 'contact',
+    id: '#contact',
     title: 'Contact',
+  },
+  {
+    id: '/DIMC-CV.pdf',
+    title: 'CV',
   },
 ];
 

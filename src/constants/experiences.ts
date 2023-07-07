@@ -15,7 +15,7 @@ const experiences = [
     date: 'Oct 2016 - Oct 2017',
     points: [
       'Crafted seamless web application using AngularJS.',
-      'Created a highly customizable and responsive one page wordpress theme.',
+      'Created a highly customizable and responsive one page WordPress theme.',
       'Acquired valuable experience in FTP, collaborative coding, and efficient file transfer.',
     ],
   },
@@ -65,9 +65,9 @@ const experiences = [
     companyName: 'Adaca',
     icon: adaca,
     iconBg: '#FFFFFF',
-    date: 'Sep 2021 - Present',
+    date: 'Sep 2021 - June 2023',
     points: [
-      'Developing and delivering a React TypeScript web application from scratch.',
+      'Developed and delivered a React TypeScript web application from scratch.',
       'Efficiently integrated graphs and maps to visually present web-based data.',
       'Implemented cutting-edge technology libraries and adopted best practices to enhance development processes.',
     ],
