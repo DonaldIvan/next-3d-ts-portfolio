@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { styles } from '@/lib/styles';
-import { fadeIn, textVariant } from '@/lib/motion';
+import { textVariant } from '@/lib/motion';
 import { Tooltip } from 'react-tooltip';
 import BallCanvas from '@/components/canvas/Ball';
 import { technologies } from '@/constants';
