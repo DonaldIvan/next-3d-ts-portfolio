@@ -62,10 +62,10 @@ const Contact = () => {
       });
   };
   return (
-    <div className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
+    <div className="flex justify-center overflow-hidden xl:mt-12">
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] rounded-2xl bg-black-100 p-8"
+        className="rounded-2xl bg-black-100 p-8"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Send me a message!</h3>
@@ -135,12 +135,12 @@ const Contact = () => {
           ))}
         </div>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="h-[350px] md:h-[550px] xl:h-[700px] xl:flex-1"
       >
-        <EarthCanvas />
-      </motion.div>
+        {/* <EarthCanvas /> 
+      </motion.div> */}
     </div>
   );
 };

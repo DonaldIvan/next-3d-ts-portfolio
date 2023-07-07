@@ -34,7 +34,7 @@ const APPWRITE_CLOUD = {
 };
 const projects = [
   {
-    name: 'Tello',
+    name: 'Trello Clone',
     description:
       'Web-based project management and collaboration tool for streamlined task organization and tracking.',
     tags: [
@@ -48,7 +48,7 @@ const projects = [
     ],
     image: tello,
     sourceCodeLink: 'https://github.com/DonaldIvan/trello-clone',
-    liveDemoLink: 'https://tello.donaldivan.dev/',
+    liveDemoLink: 'https://trello-clone.donaldivan.dev/',
   },
 ];
 
