@@ -1,11 +1,11 @@
 import { mobile, backend, creator, web } from '@/assets';
 const services = [
   {
-    title: 'JavaScript Mastery',
+    title: 'JavaScript Proficiency',
     icon: web,
   },
   {
-    title: 'Typescript Proficiency',
+    title: 'Typescript Enthusiast',
     icon: mobile,
   },
   {
