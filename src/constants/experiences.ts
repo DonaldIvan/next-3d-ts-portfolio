@@ -65,7 +65,7 @@ const experiences = [
     companyName: 'Adaca',
     icon: adaca,
     iconBg: '#FFFFFF',
-    date: 'Sep 2021 - June 2023',
+    date: 'Sep 2021 - Present',
     points: [
       'Developed and delivered a React TypeScript web application from scratch.',
       'Efficiently integrated graphs and maps to visually present web-based data.',
