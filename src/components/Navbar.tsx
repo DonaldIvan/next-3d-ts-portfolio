@@ -35,7 +35,7 @@ const Navbar = () => {
               onClick={() => setActive(title)}
               aria-hidden="true"
             >
-              <a href={`${id}`} target={`${title === 'CV' ? '_blank' : null}`}>
+              <a href={`${id}`} {...(title === 'CV' && { target: '_blank' })}>
                 {title}
               </a>
             </li>
@@ -69,7 +69,7 @@ const Navbar = () => {
                 >
                   <a
                     href={`${id}`}
-                    target={`${title === 'CV' ? '_blank' : null}`}
+                    {...(title === 'CV' && { target: '_blank' })}
                   >
                     {title}
                   </a>
