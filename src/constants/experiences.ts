@@ -60,18 +60,18 @@ const experiences = [
       'Translated design concepts into functional web applications.',
     ],
   },
-  {
-    title: 'React Typescript Developer',
-    companyName: 'Adaca',
-    icon: adaca,
-    iconBg: '#FFFFFF',
-    date: 'Sep 2021 - Present',
-    points: [
-      'Developed and delivered a React TypeScript web application from scratch.',
-      'Efficiently integrated graphs and maps to visually present web-based data.',
-      'Implemented cutting-edge technology libraries and adopted best practices to enhance development processes.',
-    ],
-  },
+  // {
+  //   title: 'React Typescript Developer',
+  //   companyName: 'Adaca',
+  //   icon: adaca,
+  //   iconBg: '#FFFFFF',
+  //   date: 'Sep 2021 - Present',
+  //   points: [
+  //     'Developed and delivered a React TypeScript web application from scratch.',
+  //     'Efficiently integrated graphs and maps to visually present web-based data.',
+  //     'Implemented cutting-edge technology libraries and adopted best practices to enhance development processes.',
+  //   ],
+  // },
 ];
 
 export default experiences;
