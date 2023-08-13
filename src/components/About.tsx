@@ -44,9 +44,9 @@ const About = () => {
         className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
       >
         My passion for cutting-edge technology and a knack for problem-solving,
-        I am a dedicated software engineer specializing in React TypeScript web
-        applications and not limited to that. With a proven track record of
-        delivering efficient solutions, I strive to create seamless user
+        I am a dedicated software engineer with 7 years of experience in web
+        development specializing in React TypeScript. With a proven track record
+        of delivering efficient solutions, I strive to create seamless user
         experiences that leave a lasting impact. Let‘s work together to bring
         your ideas to life!
       </motion.p>
